@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FATAL OMEN</title>
+    <link rel="shortcut icon" href="FO.jpg" type="image/x-icon"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+ <style>
+    .metal-mania-regular {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ </style>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white  font-normal Metal Mania">
+    <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 p-6 space-y-6 hidden md:block" >
+      <div>
+        <h1 class="metal-mania-regular text-3xl text-white animate-pulse">Fatal Omen</h1>
+        <p class="metal-mania-regular  text-gray-400">Death to all But Metal</p>
+      </div>
+      <nav class="space-y-4">
+        <a href="#hero" class=" metal-mania-regular text-lg hover:text-gray-400">Home</a>
+        <a href="#about" class=" metal-mania-regular block text-lg hover:text-gray-400">About</a>
+        <a href="#gallery" class=" metal-mania-regular block text-lg hover:text-gray-400">Gallery</a>
+        <a href="#contact" class=" metal-mania-regular block text-lg hover:text-gray-400">Contact</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 md:p-10 space-y-20">
+
+      <!-- Hero Section -->
+      <section id="hero" class="h-80 rounded-lg bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('FO.jpg');">
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2 class=" metal-mania-regular text-xl mb-4">About Us</h2>
+        <p class=" metal-mania-regular leading-relaxed animate-pulse">Fatal Omen is an Heavy metal band from Philippines formed in 2023 by <strong>Christian Cruz</strong> (vocals/bassist), <strong>Jaypee Joaquin</strong> (guitars), and <strong>Bret Baa</strong> (drums)</p>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery">
+        <h2 class=" metal-mania-regular text-xl mb-4">Gallery</h2>
+        <div class=" grid grid-cols-1 md:grid-cols-3 gap-4">
+          <img src="TODFA.jpg" class="transform  rounded-xl h-55 w-55 sm:h-95 sm:w-95bg-white shadow-xl transition duration-300 hover:scale-105" alt="TOD"/>
+          <img src="BOTB.jpg" class="transform  rounded-xl h-40 w-40 sm:h-64 sm:w-64 bg-white shadow-xl transition duration-300 hover:scale-105" alt="BOTB"/>
+          <img src="TOD2.jpg" class="transform  rounded-xl h-55 w-55 sm:h-95 sm:w-95 bg-white shadow-xl transition duration-300 hover:scale-105" alt="TOD2"/>
+          <img src="TOD3.jpg" class="transform  rounded-xl h-55 w-55 sm:h-95 sm:w-95 bg-white shadow-xl transition duration-300 hover:scale-105" alt="TOD3"/>
+          <img src="TOD4.jpg" class="transform  rounded-xl h-55 w-55 sm:h-95 sm:w-95 bg-white shadow-xl transition duration-300 hover:scale-105" alt="TOD4"/>
+          <img src="TOD5.jpg" class="transform  rounded-xl h-55 w-55 sm:h-95 sm:w-95 bg-white shadow-xl transition duration-300 hover:scale-105" alt="TOD5"/>
+
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2 class=" metal-mania-regular text-xl mb-4">Contact</h2>
+        <p class="metal-mania-regular text-sm">Email: <a href="mailto:fatalomen@gmail.com" class=" metal-mania-regular hover:underline">fatalomen@gmail.com</a></p>
+        <p class="metal-mania-regular text-sm  mt-2">
+          Follow us:
+          <a href="#" class="metal-mania-regular hover:underline mx-1">Instagram</a> |
+          <a href="#" class=" metal-mania-regular hover:underline mx-1">Facebook</a> |
+          <a href="#" class="metal-mania-regular  hover:underline mx-1">YouTube</a>
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Mobile-friendly note -->
+  <div class="md:hidden text-center py-4 text-gray-400 text-sm bg-gray-800">
+    Use a larger screen to view the sidebar.
+  </div>
+
+</body>
+</html>
