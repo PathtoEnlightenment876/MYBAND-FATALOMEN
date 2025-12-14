@@ -20,11 +20,36 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white  font-normal Metal Mania">
-    <div class="flex min-h-screen">
+     <!-- Mobile Navbar -->
+<header class="md:hidden bg-gray-800 px-4 py-3 flex items-center justify-between">
+  <h1 class="metal-mania-regular text-xl">Fatal Omen</h1>
+
+  <!-- Hamburger Button -->
+  <button id="menuBtn" class="focus:outline-none">
+    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+      viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+</header>
+
+<!-- Mobile Menu -->
+<nav id="mobileMenu"
+  class="hidden md:hidden bg-gray-800 px-6 py-4 space-y-4 metal-mania-regular">
+  <a href="#hero" class="block">Home</a>
+  <a href="#about" class="block">About</a>
+  <a href="#gallery" class="block">Gallery</a>
+  <a href="#contact" class="block">Contact</a>
+</nav>
+ 
+    <div class="flex flex-col md:flex-row min-h-screen">
+
     <!-- Sidebar -->
     <aside class="w-64 bg-gray-800 p-6 space-y-6 hidden md:block" >
       <div>
         <h1 class="metal-mania-regular text-3xl text-white animate-pulse">Fatal Omen</h1>
+		
         <p class="metal-mania-regular  text-gray-400">"Music is a moral law. It gives a soul to the universe, wings to the mind, flight to the imagination, a charm to sadness, and life to everything." — Plato. </p>
       </div>
       <nav class="space-y-4">
@@ -41,11 +66,17 @@
       <!-- Hero Section -->
       <section id="hero" class="h-80 rounded-lg bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('FO.jpg');">
       </section>
-
+      <section class="md:hidden px-4 py-6">
+  <p class="metal-mania-regular text-gray-400 text-sm text-center leading-relaxed">
+    "Music is a moral law. It gives a soul to the universe, wings to the mind,
+    flight to the imagination, a charm to sadness, and life to everything."
+    — Plato
+  </p>
+</section>
       <!-- About Section -->
       <section id="about">
         <h2 class=" metal-mania-regular text-xl mb-4">About Us</h2>
-        <p class=" metal-mania-regular leading-relaxed animate-pulse">Fatal Omen is an Heavy metal band from Philippines formed in 2023 by <strong>Christian Cruz</strong> (vocals/bassist), <strong>Jaypee Joaquin</strong> (guitars), and <strong>Bret Baa</strong> (drums)</p>
+        <p class=" metal-mania-regular leading-relaxed animate-pulse">Fatal Omen is an Heavy metal band from Philippines formed in 2023 by <strong>Christian Cruz</strong> (vocals/bass), <strong>Jaypee Joaquin</strong> (guitars), and <strong>Bret Baa</strong> (drums)</p>
       </section>
 
       <!-- Gallery Section -->
@@ -53,7 +84,6 @@
         <h2 class=" metal-mania-regular text-xl mb-4">Gallery</h2>
         <div class=" grid grid-cols-1 md:grid-cols-3 gap-4">
           <img src="TODFA.jpg" class="transform  rounded-xl h-55 w-55 sm:h-95 sm:w-95bg-white shadow-xl transition duration-300 hover:scale-105" alt="TOD"/>
-          <img src="BOTB.jpg" class="transform  rounded-xl h-40 w-40 sm:h-64 sm:w-64 bg-white shadow-xl transition duration-300 hover:scale-105" alt="BOTB"/>
           <img src="TOD2.jpg" class="transform  rounded-xl h-55 w-55 sm:h-95 sm:w-95 bg-white shadow-xl transition duration-300 hover:scale-105" alt="TOD2"/>
           <img src="TOD3.jpg" class="transform  rounded-xl h-55 w-55 sm:h-95 sm:w-95 bg-white shadow-xl transition duration-300 hover:scale-105" alt="TOD3"/>
           <img src="TOD4.jpg" class="transform  rounded-xl h-55 w-55 sm:h-95 sm:w-95 bg-white shadow-xl transition duration-300 hover:scale-105" alt="TOD4"/>
@@ -83,5 +113,14 @@
   </div>
 
 </body>
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
 
 </html>
